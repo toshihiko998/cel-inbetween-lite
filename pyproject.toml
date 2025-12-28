@@ -1,1 +1,18 @@
+[project]
+name = "cel-inbetween-lite"
+version = "0.1.0"
+description = "Lightweight cel animation inbetweening (OpenCV optical flow) with edge-aware compositing and line reinjection."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "opencv-python>=4.8",
+  "numpy>=1.24",
+]
+
+[project.scripts]
+cel-inbetween = "cel_inbetween_lite.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
 
